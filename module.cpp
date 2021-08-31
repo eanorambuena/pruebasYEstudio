@@ -1,3 +1,13 @@
+#include <Windows.h>
+#include <cmath>
+
+const double e = 2.7182818284590452353602874713527;
+
+double sinh_impl(double x) {
+    return (1 - pow(e, (-2 * x))) / (2 * pow(e, -x));
+}
+
+/*
 import random
 
 inf = 1000000
@@ -49,16 +59,4 @@ def arccos(x):
 pi = 2 * zero(arccos, 1)
 
 print(pi)
-
-"""
-def log(base, x):
-    def temp(t):
-        return (base ** t) - x
-    return zero(temp, R, 8)
-
-def ln(x):
-    return log(e, x)
-
-print(ln(2))
-
-"""
+*/
