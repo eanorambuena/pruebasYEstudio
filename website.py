@@ -1,11 +1,20 @@
-import eggdriver as ed
-ed.installFromRequests(["twill"], False)
+"""
+import webbrowser as wb
+text = input("Search: ")
+chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+f_text='https://www.google.cl/search?q=' + text
+wb.get(chrome_path).open(f_text)
+"""
 
-from twill.commands import *
-go("https://www.virustotal.com/gui/home/url")
-showforms()
+# pip install beautifulsoup4
+# pip install lxml
+import requests
+from bs4 import BeautifulSoup
 
-def printf(*args):
-    [print(i) for i in args]
+url = "https://www.virustotal.com/gui/home/url"
 
-printf(1, "hola", 56, True, "a")
+r = requests.get(url)
+soup = BeautifulSoup(r.text, 'lxml')
+
+i = soup.div[""]
+print(i)

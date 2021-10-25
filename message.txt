@@ -1,0 +1,10 @@
+Primero calculamos la velocidad del helicoptero con respecto al suelo. Observamos que la velocidad
+de P en este sistema es ~vc = vc
+ˆi
+P y el helicoptero deben tener la misma velocidad, por lo que directamente: ~vc = ~vh = vc
+ˆi con
+vecvh correspondiendo a la velocidad del helicoptero. Pero nos preguntan la velocidad relativa con
+respecto al viento; sea ~vw la velocidad del viento en el sistema de referencia anterior entonces se
+cumple h/w ~v = ~vh − ~vw con h/w ~v la velocidad relativa pedida.
+Segun la figura ~vw = vw(sin(50)ˆi − cos(50)ˆj Finalmente reemplazando se obtiene h/w ~v = (−0,298 +
+1,928)m/s
