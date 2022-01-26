@@ -1,0 +1,18 @@
+using "spanish"
+
+importa webview
+
+busqueda = "tortuguines con zapallo"
+
+URL = 'https://www.google.com/search?q=' + "+".join(busqueda.split(" "))
+
+PAGE = URL.split("://")
+PROTOCOL = PAGE[0]
+ADRESS = PAGE[1].split("/")
+TITLE = ADRESS[0]
+
+webview.create_window(TITLE, URL)
+
+webview.start()
+
+
